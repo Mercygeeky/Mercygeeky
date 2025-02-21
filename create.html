@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #5d330b;
+            font-size: 24px;
+        }
+        .bold-text {
+            font-size: 32px;
+            font-weight: bold;
+            color: #5d330b;
+            text-shadow: 2px 2px #ffcc00;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RESERVATION</h1>
+        <div class="bold-text">BOOK YOUR TABLE</div>
+        <form>
+            <input type="text" name="name" placeholder="NAME" required>
+            <input type="email" name="email" placeholder="EMAIL" required>
+            <select name="date" required>
+                <option value="">Select Date</option>
+                <option value="2025-02-21">Feb 21, 2025</option>
+                <option value="2025-02-22">Feb 22, 2025</option>
+            </select>
+            <select name="time" required>
+                <option value="">Select Time</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="18:00">6:00 PM</option>
+            </select>
+            <input type="number" name="people" placeholder="PEOPLE" required min="1">
+            <button type="submit" class="btn">FIND TABLE</button>
+        </form>
+    </div>
+</body>
+</html>
